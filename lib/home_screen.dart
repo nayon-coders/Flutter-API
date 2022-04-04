@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:api_practice/complex-json.dart';
 import 'package:api_practice/photo_screen.dart';
 import 'package:api_practice/user_info.dart';
 import 'package:api_practice/user_info_without_model.dart';
@@ -54,6 +55,12 @@ class _HomePageState extends State<HomePage> {
               onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>WithOutModelUserInfo())),
               icon: Icon(
                 Icons.verified_user,
+              )
+          ),
+          IconButton(
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>ComplexJsonVeiw())),
+              icon: Icon(
+                Icons.add_shopping_cart,
               )
           ),
         ],
